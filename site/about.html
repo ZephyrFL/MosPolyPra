@@ -1,0 +1,70 @@
+<!-- ========== about.html (О проекте) ========== -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — GameAbility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🎮 Game<span>Ability</span></div>
+    <div class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html" class="active">О проекте</a>
+      <a href="team.html">Участники</a>
+      <a href="journal.html">Журнал</a>
+      <a href="resources.html">Ресурсы</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <h2 class="section-title">🔍 О проекте</h2>
+    
+    <div class="grid-2">
+      <div class="card">
+        <h3>🧩 Проблема</h3>
+        <p>Стандартные геймпады не учитывают особенности людей с ДЦП, тремором, мышечной дистрофией или отсутствием конечностей. Наш джойстик — модульная система с возможностью перепрограммирования кнопок, увеличенными клавишами и переменным усилием стиков.</p>
+        <div class="media-placeholder" style="margin-top: 1.5rem;">
+          <span>📉 диаграмма несоответствий</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>⚙️ Решение</h3>
+        <p>Мы создаём открытую платформу на базе Arduino/ESP32. Джойстик поддерживает внешние выносные кнопки (sip/puff, большие педали), а также крепление на инвалидное кресло. </p>
+        <ul style="margin-left:1.5rem; margin-top: 1rem;">
+          <li>сенсорный слайдер</li>
+          <li>6 программируемых макросов</li>
+          <li>виброотклик</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="diagram-box">
+      <p style="font-size:1.4rem; margin-bottom: 1rem;">📊 Диаграмма сценариев использования</p>
+      <svg width="100%" height="120" viewBox="0 0 500 100">
+        <rect x="10" y="20" width="90" height="60" fill="#2d5a9a" rx="12" />
+        <text x="30" y="55" fill="white">тремор</text>
+        <rect x="130" y="10" width="90" height="70" fill="#3f7bcb" rx="12" />
+        <text x="150" y="50" fill="white">слабая сила</text>
+        <rect x="250" y="20" width="90" height="60" fill="#578fdc" rx="12" />
+        <text x="270" y="55" fill="white">одна рука</text>
+        <rect x="370" y="30" width="90" height="50" fill="#74aaf0" rx="12" />
+        <text x="390" y="60" fill="white">спазмы</text>
+      </svg>
+      <p><em>диаграмма: сценарии, покрываемые настройками джойстика</em></p>
+    </div>
+
+    <div class="media-row">
+      <div class="media-item">🖼️ 3D-модель корпуса</div>
+      <div class="media-item">🎬 видео-тест с пользователем</div>
+      <div class="media-item">📐 чертежи крепления</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 GameAbility — проектная деятельность</p>
+  </footer>
+</body>
+</html>
